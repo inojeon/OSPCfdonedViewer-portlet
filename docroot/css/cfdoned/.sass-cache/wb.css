@@ -1,0 +1,38 @@
+.wb-appFrame {
+  background-color: #f6f6f6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-row-gap: 0px;
+  grid-template-rows: 50px 1fr;
+  grid-template-areas: "header" "ViewerColumn"; }
+
+.wb-appFrame-header {
+  grid-area: header;
+  padding-left: 10px;
+  padding-top: 10px;
+  background-color: #ffffff;
+  padding-right: 10px; }
+
+.wb-appFrame-ViewerColumn {
+  display: block;
+  position: relative;
+  grid-area: ViewerColumn;
+  height: calc(100vh - 57px);
+  max-width: calc(100vw); }
+
+.level-left .level-item:not(:last-child) {
+  margin-right: 0.75rem !important; }
+
+.level-left {
+  display: flex; }
+
+.level {
+  display: flex !important; }
+
+.level-item {
+  margin-bottom: 0rem !important; }
+
